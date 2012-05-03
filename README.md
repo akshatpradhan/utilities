@@ -15,4 +15,6 @@ When you sell things on ebay, you want to give potential customers a good user e
 
 ### packet_analysis
 
+WARNING: Some of my packets contain malicious payloads. If you try to replay them, you might own yourself!!!
+
 In here you'll find various packets I've collected over the years. I've written some stuff on packet and protocol breakdown. In the DHCP documentation, you'll find how Microsoft breaks the RFC by adding their own MSFT padding to DHCP. Also, if you see CACACACACACACACACACACACACACACACACA in a WINS packet, THAT IS NOT AN OVERFLOW!!!
