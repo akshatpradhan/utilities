@@ -1,0 +1,39 @@
+Packet Capture Submission Guidelines by Akshat Pradhan
+
+=============
+All Packet captures must provide all data including link layer data. Use tcpdump like this to get the goods. tcpdump -s 0 -ennXXr
+
+=============
+Common Protocol use
+=============
+History
+=============
+Protocol message format
+=============
+Explanation of Format Header
+=============
+Related names, services
+Service Descriptions
+=============
+Related Articles
+=============
+Credits
+=============
+Color Coded Packet capture
+i.e. 
+DNS Snap
+
+    * IP header in red.
+    * UPD header in blue.
+    * DNS header in green. 
+
+Script started on Tue Mar 18 01:06:52 2003
+sherman# tcpdump -s 5000 -X udp and port 53
+tcpdump: listening on fxp
+01:07:19.635884 lee.cs.miami.edu.57040 > sherman.cs.miami.edu.domain:  22504 op5 [1a] [1n] SOA? cs.miami.edu. (67) (DF)
+0x0000	 4500 005f 3c0f 4000 4011 a653 ac13 0002	E.._<.@.@..S....
+0x0010	 ac14 0002 ded0 0035 004b 1210 57e8 2800	.......5.K..W.(.
+0x0020	 0001 0001 0001 0000 0263 7305 6d69 616d	.........cs.miam
+0x0030	 6903 6564 7500 0006 0001 0853 4152 4153	i.edu......SARAS
+0x0040	 4f54 41c0 0c00 0100 fe00 0000 0000 00c0	OTA.............
+0x0050	 1e00 0100 0100 0001 2c00 04ac 1301 23  	........,.....#
